@@ -1,0 +1,182 @@
+/* General reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font size for better scalability and readability */
+html {
+  font-size: 62.5%; /* 1rem = 10px if the default font size is 16px */
+}
+
+/* General body styles */
+body {
+  font-family: "Rubic", sans-serif;
+  font-weight: 400;
+  color: aquamarine;
+  overflow-y: hidden;
+  font-size: 2rem;
+}
+
+/* Container to center the clock in the viewport */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  justify-content: center;
+  background-color: #1d1925;
+}
+
+/* Clock face styling */
+.clock {
+  position: relative;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.am-pm {
+  position: absolute;
+  top: 18rem;
+  left: 30rem;
+  background-color: #1d1925;
+  box-shadow: 0 0 2.5rem rgba(102, 51, 153, 0.2);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: rgba(255, 0, 0, 0.746);
+  text-shadow: 0 0 2rem rgba(255, 0, 0, 0.746);
+}
+
+/* Common styles for hour numbers and second bars */
+.hour-number,
+.bar-second {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Styling for hour numbers */
+.hour-number span {
+  position: absolute;
+  transform: rotate(calc(var(--index) * 30deg));
+  inset: 0.6rem;
+  text-align: center;
+}
+
+.hour-number span p {
+  font-size: 5.2rem;
+  color: aquamarine;
+  text-shadow: 0 0 2rem rgba(127, 255, 212, 0.5);
+  transform: rotate(calc(var(--index) * -30deg));
+}
+
+/* Styling for second bars */
+.bar-second span {
+  position: absolute;
+  inset: -2rem;
+  transform: rotate(calc(var(--index) * 6deg));
+  text-align: center;
+}
+
+.bar-second span p {
+  display: inline-block;
+  width: 0.2rem;
+  height: 1.2rem;
+  background-color: #fff;
+  box-shadow: 0 0 2.5px 2.5px rgba(102, 51, 153, 0.5);
+}
+
+.bar-second span:nth-child(5n) p {
+  background-color: rebeccapurple;
+  height: 2.3rem;
+}
+
+/* Common styles for clock hands */
+.hand-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hand-box .hand {
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.hand-box .hand span {
+  display: inline-block;
+  transform-origin: bottom;
+  border-radius: 50%;
+}
+
+/* Styling for hour hand */
+.hand-box .hour span {
+  width: 0.8rem;
+  height: 16rem;
+  background: aquamarine;
+}
+
+/* Styling for minute hand */
+.hand-box .minute span {
+  width: 0.8rem;
+  height: 22rem;
+  background: aquamarine;
+}
+
+/* Styling for second hand */
+.hand-box .second span {
+  width: 0.4rem;
+  height: 30rem;
+  background: rgba(255, 0, 0, 0.746);
+}
+
+.hand-box .second::after {
+  content: " ";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: aquamarine;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 2px rgba(127, 255, 212, 0.5);
+}
+
+/* Define the size of the clock hands */
+.hand-box .hour {
+  width: 32rem;
+  height: 32rem;
+}
+
+.hand-box .minute {
+  width: 44rem;
+  height: 44rem;
+}
+
+.hand-box .second {
+  width: 48rem;
+  height: 48rem;
+  transform: rotate(160deg);
+}
+
+/* world time */
+
+.world-time select {
+  width: 20rem;
+  height: 3rem;
+  border: 2px solid rebeccapurple;
+  outline: none;
+  border-radius: 0.5rem;
+  background: #1d1925;
+  color: aquamarine;
+  margin-left: 0.6rem;
+  margin-top: 1rem;
+}
