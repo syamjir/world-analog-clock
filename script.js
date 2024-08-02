@@ -9,7 +9,7 @@ const createOptions = (data) => {
   selectEl.insertAdjacentHTML("afterbegin", optionEls.join(""));
 };
 
-fetch("http://worldtimeapi.org/api/timezone")
+fetch("https://worldtimeapi.org/api/timezone")
   .then((res) => {
     if (!res.ok) {
       throw Error("fetch error");
@@ -52,7 +52,7 @@ function findTime() {
   const city = selectEl.value;
   console.log(city);
 
-  fetch(`http://worldtimeapi.org/api/timezone/${city}`)
+  fetch(`https://worldtimeapi.org/api/timezone/${city}`)
     .then((res) => {
       if (!res.ok) {
         throw Error("fetch error");
