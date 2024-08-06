@@ -185,11 +185,12 @@ body {
 
 .world-time select {
   width: 20rem;
-  height: 3rem;
+  height: 4rem;
   border: 2px solid rebeccapurple;
   outline: none;
   border-radius: 0.5rem;
   background: #1d1925;
   color: aquamarine;
   margin-left: 0.6rem;
+  font-size: 1.8rem;
 }
