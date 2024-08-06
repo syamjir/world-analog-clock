@@ -1,0 +1,117 @@
+@media (max-width: 76rem) {
+  .container {
+    flex-direction: column;
+  }
+
+  .am-pm {
+    position: absolute;
+    top: 18rem;
+    left: 33rem;
+  }
+}
+@media (max-width: 63rem) {
+  .clock {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+  }
+  .hand-box .hour {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .hand-box .minute {
+    width: 34rem;
+    height: 34rem;
+  }
+
+  .hand-box .second {
+    width: 38rem;
+    height: 38rem;
+  }
+  .hand-box .second span {
+    width: 0.4rem;
+    height: 24rem;
+  }
+  .hand-box .hour span {
+    width: 0.8rem;
+    height: 13rem;
+  }
+  .hand-box .minute span {
+    width: 0.8rem;
+    height: 18rem;
+  }
+  .am-pm {
+    position: absolute;
+    top: 13rem;
+    left: 25rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  .clock {
+    position: relative;
+    width: 35rem;
+    height: 35rem;
+  }
+  .hand-box .hour {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .hand-box .minute {
+    width: 28rem;
+    height: 28rem;
+  }
+
+  .hand-box .second {
+    width: 35rem;
+    height: 35rem;
+  }
+  .hand-box .second span {
+    width: 0.4rem;
+    height: 22rem;
+  }
+  .hand-box .hour span {
+    width: 0.8rem;
+    height: 10rem;
+  }
+  .hand-box .minute span {
+    width: 0.8rem;
+    height: 15rem;
+  }
+  .am-pm {
+    position: absolute;
+    top: 13rem;
+    left: 23rem;
+  }
+  html {
+    font-size: 60.5%; /* 1rem = 10px if the default font size is 16px */
+  }
+}
+
+@media (max-width: 44rem) {
+  html {
+    font-size: 55.5%; /* 1rem = 10px if the default font size is 16px */
+  }
+}
+@media (max-width: 40rem) {
+  html {
+    font-size: 50.5%; /* 1rem = 10px if the default font size is 16px */
+  }
+}
+@media (max-width: 34rem) {
+  html {
+    font-size: 40.5%; /* 1rem = 10px if the default font size is 16px */
+  }
+}
+@media (max-width: 28rem) {
+  html {
+    font-size: 30.5%; /* 1rem = 10px if the default font size is 16px */
+  }
+}
+@media (max-width: 21rem) {
+  html {
+    font-size: 25.5%; /* 1rem = 10px if the default font size is 16px */
+  }
+}
